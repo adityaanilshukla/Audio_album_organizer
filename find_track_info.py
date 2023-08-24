@@ -7,9 +7,6 @@ import re
 import requests
 from base64 import b64encode
 
-#test name to be changed later
-audio_file_path = 'audioFile.mp3'
-
 from spotify_keys import *
 
 # remove random strings in song name that make it hard to determine songs/album metadata
@@ -28,9 +25,6 @@ def get_recording_matches(ACOUSTID_API_KEY, fingerprint, duration):
 # get most common value in list
 def most_common(lst):
     return max(set(lst), key=lst.count)
-
-
-
 
 # get the song title from the matches
 def get_song_title(recording_matches):
@@ -123,6 +117,7 @@ def pull_spotify_metadata(artist, title):
 
 
 def find_song_info(ACOUSTID_API_KEY, file_path):
+
     duration, fingerprint = acoustid.fingerprint_file(file_path)
     
     recording_matches = get_recording_matches(ACOUSTID_API_KEY, fingerprint, duration)

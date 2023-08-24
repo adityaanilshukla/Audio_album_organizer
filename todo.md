@@ -6,7 +6,22 @@
 - [ ] Make this function handle errors
 - [ ] make the functions get_song_name and get_song_artist on different threads
 - [ ] make the function understand that some tracks have multiple artists
-- [ ] determine why acoustid is not able to get the song name for some tracks (hips dont lie, strawberry fields highway to hell, these only work sometimes)
+- [ ] some songs appear in multiple albums, find a way to get all the albums it is found in
+
+### songs that are not working
+
+- [ ] determine why acoustid is not able to get the song name for some tracks
+
+1. Highway to Hell (unalbe to get song name)
+2. Strawberry Fields Forever (sometimes)
+3. Fat bottomed girls (getting wrong song name)
+
+- [ ] determine why spotify is not able to get Album name for some songs
+
+1. Don't Stop Me Now
+2. I Just Cant Wait to Be King (suspected multiple artists)
+3. Hips Don't Lie
+4. SRV's voodoo Chile not Jimi's
 
 ## UI-UX
 
